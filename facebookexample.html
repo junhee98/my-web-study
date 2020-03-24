@@ -24,10 +24,37 @@
         display:grid;
         grid-template-columns:1fr 1fr;
         background-color: skyblue;
-        background-size: 100% 150px;
+        background-size: 100% 100%;
       }
       .all{
         text-align:center;
+      }
+      .main{
+
+      }
+      .explain{
+        margin-top:5px;
+      }
+      #inputuserinformation{
+        display: block;
+      }
+      .lastnames{
+
+      }
+      .birthdays{
+        text-align: center;
+      }
+      .explaintext{
+        font-size: 5px;
+      }
+      .language{
+        font-size:10px;
+      }
+      .othersite{
+        font-size:10px;
+      }
+      .versionfacebook{
+        font-size:3px;
       }
     </style>
   </head>
@@ -45,61 +72,87 @@
       </div>
     </div>
     <div class="all">
-      <h2>새 계정 만들기</h2>
-      <p>빠르고 쉽습니다.</p>
-      <form action="https://m.facebook.com/reg/" method="post">
-        <input type="text" name="lastname" value="성(姓)">
-        <input type="text" name="firstname" value="이름(성은 제외)">
-        <input type="text" name="phonenumberoremail" value="휴대폰 번호 또는 이메일">
-        <input type="password" name="password" value="새 비밀번호">
-      </form>
-      <label for="birthday">생일</label>
+      <div class="main">
+        <h2>새 계정 만들기</h2>
+      </div>
+      <div class="explain">
+        <p>빠르고 쉽습니다.</p>
+      </div>
+      <div id="inputuserinformation">
         <form action="https://m.facebook.com/reg/" method="post">
-          <input id="birthday" type="date" name="birthday" value="2020-03-23">
+          <div class="firstline">
+            <input class="lastnames" type="text" name="lastname" value="성(姓)">
+            <input class="firstnames" type="text" name="firstname" value="이름(성은 제외)">
+          </div>
+          <div class="secondline">
+              <input class="numberoremail" type="text" name="phonenumberoremail" value="휴대폰 번호 또는 이메일">
+          </div>
+          <div class="lastline">
+              <input class="pwd" type="password" name="password" value="새 비밀번호">
+          </div>
         </form>
-      <label for="sex">성별</label>
-        <form class="sex" action="https://m.facebook.com/reg/" method="post">
-          <label for="sex(woman)">
-            <input id="sex(woman)" type="radio" name="what'syoursex?" value="woman">여성
-          </label>
-          <label for="sex(man)">
-            <input id="sex(man)" type="radio" name="what'syoursex?" value="man">남성
-          </label>
-          <label for="sex(default)">
-              <input id="sex(default)" type="radio" name="what'syoursex?" value="user input">직접입력
-          </label>
-        </form>
-      <p>
-        가입하기 버튼을 클릭하면 Facebook의 <a href="/legal/terms/update" target="_blank">약관</a>,
-        <a href="/about/privacy/update" target="_blank">데이터정책</a>및
-        <a href="/policies/cookies/" target="_blank">쿠키 정책</a>에 동의하게 됩니다.
-        Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.
-      </p>
-      <form action="https://m.facebook.com/reg/" method="post">
-        <input type="submit" name="sign up" value="가입하기">
-      </form>
-      <p>
-        한국어
-        English (US)
-        Tiếng Việt
-        Bahasa Indonesia
-        ภาษาไทย
-        Español
-        中文(简体)
-        日本語
-        Português (Brasil)
-        Français (France)
-        Deutsch
-      </p>
-      <p>
-        가입하기 로그인 Messenger Facebook LiteWatch 사람 페이지 페이지카테고리 장소 게임 위치
-        Marketplace 그룹 Instagram 지역기부 캠페인 서비스 회사소개 광고만들기 페이지만들기 개발자 채용정보
-        개인정보처리방침 쿠키 AdChoices 이용약관 고객센터
-      </p>
-      <p>
-        Facebook © 2020
-      </p>
-    </div>
+      </div>
 
+      <div class="birthdays">
+        <label for="birthday">생일</label>
+          <form action="https://m.facebook.com/reg/" method="post">
+            <input id="birthday" type="date" name="birthday" value="2020-03-23">
+          </form>
+      </div>
+      <div class="sexs">
+        <label for="sex">성별</label>
+          <form class="sex" action="https://m.facebook.com/reg/" method="post">
+            <label for="sex(woman)">
+              <input id="sex(woman)" type="radio" name="what'syoursex?" value="woman">여성
+            </label>
+            <label for="sex(man)">
+              <input id="sex(man)" type="radio" name="what'syoursex?" value="man">남성
+            </label>
+            <label for="sex(default)">
+                <input id="sex(default)" type="radio" name="what'syoursex?" value="user input">직접입력
+            </label>
+          </form>
+      </div>
+      <div class="explaintext">
+        <p>
+          가입하기 버튼을 클릭하면 Facebook의 <a href="/legal/terms/update" target="_blank">약관</a>,
+          <a href="/about/privacy/update" target="_blank">데이터정책</a>및
+          <a href="/policies/cookies/" target="_blank">쿠키 정책</a>에 동의하게 됩니다.
+          Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.
+        </p>
+      </div>
+      <div class="gotonext">
+        <form action="https://m.facebook.com/reg/" method="post">
+          <input type="submit" name="sign up" value="가입하기">
+        </form>
+      </div>
+      <div class="language">
+        <p>
+          한국어
+          English (US)
+          Tiếng Việt
+          Bahasa Indonesia
+          ภาษาไทย
+          Español
+          中文(简体)
+          日本語
+          Português (Brasil)
+          Français (France)
+          Deutsch
+        </p>
+      </div>
+      <div class="othersite">
+        <p>
+          가입하기 로그인 Messenger Facebook LiteWatch 사람 페이지 페이지카테고리 장소 게임 위치
+          Marketplace 그룹 Instagram 지역기부 캠페인 서비스 회사소개 광고만들기 페이지만들기 개발자 채용정보
+          개인정보처리방침 쿠키 AdChoices 이용약관 고객센터
+        </p>
+      </div>
+      <div class="versionfacebook">
+        <p>
+          Facebook © 2020
+        </p>
+      </div>
+    </div>
   </body>
 </html>
