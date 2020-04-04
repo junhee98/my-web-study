@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Google</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      body{
+        font-family: 'Apple SD Gothic Neo',arial,sans-serif;
+      }
+      .head_table{
+        display:flex;
+        float:right;
+        font-size:13px;
+      }
+      .image_tag{
+        padding-left:15px;
+        padding-right:15px;
+      }
+      .log_in_button{
+        display:inline-block;
+        line-height:28px;
+        padding:0 12px;
+        border-radius:2px;
+        color:#fff;
+        border:1px solid #4285f4;
+        font-weight: bold;
+        outline:none;
+        background-color: #4285f4;
+      }
+      .Gmail_tag{
+        display:inline-block;
+        cusor:pointer;
+        line-height:24px;
+        outline:none;
+        vertical-align:middle;
+
+      }
+      .image_tag{
+        display:inline-block;
+        cusor:pointer;
+        line-height:24px;
+        outline:none;
+        vertical-align:middle;
+      }
+      a{
+        text-decoration:none;
+        color:black;
+      }
+      .mainframe{
+        text-align: -webkit-center;
+        margin-top:47px;
+      }
+      .google_logos{
+        padding-top:109px;
+        height: 92px;
+        width: 272px;
+        text-align: -webkit-center;
+        font-size:small;
+      }
+      .search_block{
+        padding: 5px 8px 0 16px;
+        padding-left: 14px;
+      }
+      .serch_block_input{
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: rgba(0,0,0,.87);
+        word-wrap: break-word;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        margin-top: -37px;
+        font-size: 16px;
+        cusor:text;
+        weight:30%;
+        float:left;
+      }
+      .magnifier{
+        height:100%;
+        weight:30%;
+        float:left;
+        color:#9AA0A6;
+        fill:currentColor;
+        line-height:24px;
+        align-items: center;
+        padding-right: 13px;
+        margin-top: -5px;
+      }
+      input_tool{
+        weight:30%;
+        float:left;
+      }
+      voice_search{
+        weight:30%;
+        float:left;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="head_table">
+      <a class="Gmail_tag" href="https://www.google.com/intl/ko/gmail/about/#">
+        Gmail
+      </a>
+      <a class="image_tag" href="https://www.google.co.kr/imghp?hl=ko&tab=wi&ogbl">
+        이미지
+      </a>
+      <div class="log_in_tag">
+        <form action="https://accounts.google.com/signin/v2/identifier?hl=ko&passive=true&continue=https%3A%2F%2Fwww.google.co.kr%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+          <input class="log_in_button" type="submit" value="로그인">
+        </form>
+      </div>
+    </div>
+    <div class="mainframe">
+      <img class="google_logos" alt="Google" src="google_logo/googlelogo_color_272x92dp (1).png"
+      srcset="google_logo/googlelogo_color_272x92dp (2).png, google_logo/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="search_block">
+      <div class="magnifier">
+        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+          </path>
+        </svg>
+      </div>
+      <form action="http://google.co.kr">
+        <input class="search_block_input" type="text" name="seach_value">
+      </form>
+      <div class="input_tool">
+        <img class="input_tool_image" src="google_logo/tia.png">
+      </div>
+      <div class="voice_search">
+        <img class="voice_search_image" src="google_logo/googlemic_color_24dp.png">
+      </div>
+    </div>
+    <div class="google_search">
+      <form action="http://google.co.kr">
+        <input class="bottom_button1" type="button" name="search" value="Google 검색">
+      </form>
+    </div>
+    <div class="funny_button">
+      <form action="http://127.0.0.1/index.html">
+        <input class="feeling" type="button" name="funnybutton" value="I'm Feeling Luckey">
+      </form>
+    </div>
+    <div class="korea">
+      대한민국
+    </div>
+    <span class="advertise">
+      광고
+    </span>
+    <span class="business">
+      비즈니스
+    </span>
+    <span class="information_of_google">
+      Google 정보
+    </span>
+    <span class="origin_of_search">
+      검색의 원리
+    </span>
+    <span class="personal_information">
+      개인정보처리방침
+    </span>
+    <span class="terms">
+      약관
+    </span>
+    <span class="setup">
+      설정
+    </span>
+  </body>
+</html>
