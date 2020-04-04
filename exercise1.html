@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="W3C-EXERCISE">
+    <meta name="keywords" content="W3C,w3cexercise,examw3c">
+    <meta name="author" content="jjuntanggu98">
+    <meta name="viewport" content="width=device-width">
+    <title>W3C-EXERCISE</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+
+        font-family:Arial;
+        background-color: lightgray;
+        margin:8px;
+        padding:10px;
+      }
+      h1{
+        text-align:center;
+        font-size:50px;
+      }
+      .head{
+        padding:30px;
+        background-color: #FFFFFF;
+      }
+      .head_subscribe{
+        text-align: center;
+      }
+      .top_nav{
+        background-color: #333;
+        overflow:hidden;
+      }
+      a{
+        text-decoration: none;
+        color: #f2f2f2;
+        padding:14px 16px;
+        text-align: center;
+      }
+      .link_1{
+        float:left;
+      }
+      .link_2{
+        float:left;
+      }
+      .link_3{
+        float:left;
+      }
+      .link_4{
+        float:right;
+      }
+      .body{
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .card{
+        padding:20px;
+        margin-top:20px;
+        background-color: #FFFFFF;
+      }
+      .leftitems{
+        float:left;
+        width:75%;
+      }
+      .rightitems{
+        float:right;
+        width:25%;
+        padding-left: 20px;
+      }
+      .fakeimg{
+        background-color: #aaa;
+        padding:20px;
+        width:100%;
+      }
+      #leftfakeimg1{
+        height: 200px;
+      }
+      #leftfakeimg2{
+        height: 200px;
+      }
+      #rightfakeimg1{
+        height:100px;
+      }
+      .foot{
+        padding:20px;
+        margin-top:20px;
+        text-align:center;
+        background-color: #DDDDDD;
+      }
+      @media screen and (max-width:800px){
+        .leftitems, .rightitems{
+          width:100%;
+          padding:0;
+        }
+      }
+      @media screen and (max-width:400px){
+        a{
+          float:none;
+          width:100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h1>My Website</h1>
+
+      <p class="head_subscribe">Resize the browser window to see the effect.</p>
+
+    </div>
+
+    <div class="top_nav">
+      <a class="link_1" href="https://www.naver.com/"
+        onmouseover="this.style.backgroundColor = 'gray'; this.style.color='black';"
+        onmouseout="this.style.backgroundColor='#333'; this.style.color='#f2f2f2'">Naver</a>
+      <a class="link_2" href="https://www.google.co.kr/"
+        onmouseover="this.style.backgroundColor = 'gray'; this.style.color='black';"
+        onmouseout="this.style.backgroundColor='#333'; this.style.color='#f2f2f2'">Google</a>
+      <a class="link_3" href="https://www.daum.net/"
+        onmouseover="this.style.backgroundColor = 'gray'; this.style.color='black';"
+        onmouseout="this.style.backgroundColor='#333'; this.style.color='#f2f2f2'">Daum</a>
+      <a class="link_4" href="https://www.w3.org/"
+        onmouseover="this.style.backgroundColor = 'gray'; this.style.color='black';"
+        onmouseout="this.style.backgroundColor='#333'; this.style.color='#f2f2f2'">W3C</a>
+    </div>
+
+    <div class="body">
+      <div class="leftitems">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+
+          <h5>Title description, Dec 7, 2017</h5>
+
+          <div id="leftfakeimg1" class="fakeimg">
+            image
+          </div>
+
+          <p>
+            Some text..
+
+            Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+
+          <h5>Title description, Sep 2, 2017</h5>
+
+          <div id="leftfakeimg2" class="fakeimg">
+            image
+          </div>
+
+          <p>
+            Some text..
+
+            Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco.
+          </p>
+        </div>
+      </div>
+
+      <div class="rightitems">
+        <div class="card">
+          <h2>About Me</h2>
+          <div id="rightfakeimg1" class="fakeimg">
+            image
+          </div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+
+        <div class="card">
+          <h2>Popular Post</h2>
+          <div id="post1" class="fakeimg">
+            <p>image</p>
+          </div>
+          <div id="post2" class="fakeimg">
+            <p>image<p>
+          </div>
+          <div id="post3" class="fakeimg">
+            <p>image</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Follow Me</h2>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
